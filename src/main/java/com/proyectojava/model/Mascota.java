@@ -1,25 +1,25 @@
 package com.proyectojava.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter @Setter
 @Entity
-public class Persona {
+public class Mascota {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     public Long id;
     public String nombre;
-    public String apellido;
-    public int edad;
+    public String raza;
+    public String color;
 
-    // relación con uno a uno
-    @OneToOne
-    private Mascota unaMascota;
 }
