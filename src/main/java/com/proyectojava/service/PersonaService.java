@@ -42,7 +42,7 @@ public class PersonaService implements IPersonaService{
         // busco el objeto original
         Persona perso = this.findPersona(idOriginal);
 
-        // modificando a nivel de lógica
+        // modificando ha nivel de lógica
         perso.setId(idNuevo);
         perso.setNombre(nuevoNombre);
         perso.setApellido(nuevoApellido);
