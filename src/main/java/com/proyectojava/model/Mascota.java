@@ -17,8 +17,9 @@ public class Mascota {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    public Long id;
+    public Long id_Mascota;
     public String nombre;
+    public String especie;
     public String raza;
     public String color;
 

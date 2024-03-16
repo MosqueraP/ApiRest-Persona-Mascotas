@@ -18,7 +18,6 @@ public class Persona {
     public String nombre;
     public String apellido;
     public int edad;
-
     // relación con uno a uno
     @OneToOne
     private Mascota unaMascota;
