@@ -26,4 +26,5 @@ public interface IPersonaService{
                              int nuevaEdad);
 
 
+    public void editPersona(Persona per); // llama al método en servicio
 }

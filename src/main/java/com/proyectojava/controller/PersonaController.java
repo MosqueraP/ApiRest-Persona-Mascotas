@@ -55,5 +55,12 @@ public class PersonaController {
         return perso;
     }
 
+    // enpoint para modificar una persona otra
+    @PutMapping ("/personas/editar")
+    public Persona editPersona(@RequestBody Persona per ){
+        persoServ.editPersona(per);
 
+        // devolver el objeto modificado traído desde IPersonaServicio
+        return persoServ.findPersona(per.getId());
+    }
 }

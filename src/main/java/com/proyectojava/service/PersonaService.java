@@ -53,4 +53,11 @@ public class PersonaService implements IPersonaService{
 
     }
 
+    // enpoint para modificar todos los parámetros de una persona
+    @Override
+    public void editPersona(Persona per) {
+        this.savePersona(per); // guarda el objeto nuevo y modificado
+
+    }
+
 }
