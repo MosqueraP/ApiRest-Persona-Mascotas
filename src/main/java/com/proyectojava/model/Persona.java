@@ -17,5 +17,5 @@ public class Persona {
     public Long id;
     public String nombre;
     public String apellido;
-    public String edad;
+    public int edad;
 }

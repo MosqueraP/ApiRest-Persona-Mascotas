@@ -19,6 +19,11 @@ public interface IPersonaService{
     // método buscar un solo objeto (LECTURA )
     public Persona findPersona(Long id);
 
-    // método eliminar una persona ()
+    // método modificar una persona ()
+    public void editPersona (Long idOriginal, Long idNuevo,
+                             String nuevoNombre,
+                             String nuevoApellido,
+                             int nuevaEdad);
+
 
 }
