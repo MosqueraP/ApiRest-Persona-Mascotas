@@ -18,7 +18,9 @@ public class Persona {
     public String nombre;
     public String apellido;
     public int edad;
-    // relación con uno a uno
-    @OneToOne
+    @OneToOne // relación uno a uno con la tabla de mascota
+    @JoinColumn(name = "una_mascota_id_mascota", referencedColumnName = "id_Mascota")
     private Mascota unaMascota;
+
+
 }
