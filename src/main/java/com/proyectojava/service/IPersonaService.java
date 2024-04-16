@@ -13,7 +13,7 @@ public interface IPersonaService{
     // método guardar una persona (ALTA)
     public void savePersona(Persona persona);
 
-    // método guardar una persona (BAJA)
+    // método elminar una persona (BAJA)
     public void deletePersona(Long id);
 
     // método buscar un solo objeto (LECTURA )
